@@ -6,8 +6,8 @@ import java.rmi.*;
 public interface RemoteInterface extends Remote {
     public String retStatus();
     public class BlockData implements Serializable {
-        String[] name;
-        int[] content;
+        public String[] name;
+        public int[] content;
 
         public BlockData() {
             name = new String[0];
